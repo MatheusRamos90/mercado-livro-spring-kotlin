@@ -1,0 +1,13 @@
+spring:
+  profiles:
+    active: dev
+  jpa:
+    hibernate:
+      ddl-auto: update
+      dialect: org.hibernate.dialect.PostgreSQLDialect
+  jackson:
+    default-property-inclusion: non_null
+
+jwt:
+  secret: 7c1d735e-e8b7-4712-befa-925c9ab0647a
+  expiration: 999999

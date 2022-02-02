@@ -1,0 +1,17 @@
+spring:
+  flyway:
+    enabled: true
+    locations: filesystem:src/test/resources/db/migration
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.H2Dialect
+  datasource:
+    url: jdbc:h2:mem:mercadolivrotest;DB_CLOSE_DELAY=-1
+    username: sa
+    password:
+    driverClassName: org.h2.Driver
+
+jwt:
+  secret: 7c1d735e-e8b7-4712-befa-925c9ab0647a
+  expiration: 999999
